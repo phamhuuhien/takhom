@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Takhom</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="list_navigation_content">List navigation requires the use of a special layout for the spinner item. Failure to use it will result in your spinner text being the same color as the action bar background on pre-3.0. See the source code of this demo for more information.</string>
+
+</resources>
