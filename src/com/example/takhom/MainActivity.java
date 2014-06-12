@@ -37,13 +37,15 @@ public class MainActivity extends SherlockFragmentActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
     	if(item.getTitle().equals("Home")) {
-    		if(loginFragment == null)
+    		//if(loginFragment == null)
         		loginFragment = new LoginFragment();
         	ft.replace(android.R.id.content, loginFragment);
     	} else if (item.getTitle().equals("Archives")) {
-    		if(testFragment == null)
+    		//if(testFragment == null)
         		testFragment = new TestFragment();
         	ft.replace(android.R.id.content, testFragment);
+    	} else if (item.getTitle().equals("Help")) {
+    		ft.replace(android.R.id.content, new HomeFragment());
     	}
     	ft.commit();
         //Toast.makeText(this, "Got click: " + item.getTitle() , Toast.LENGTH_SHORT).show();
