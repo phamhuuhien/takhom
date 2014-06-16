@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dip"
             android:layout_marginRight="20dip"
+            android:textSize="15sp"
             android:background="@drawable/password_field_default"
             android:drawableRight="@drawable/ic_mail"
             android:hint="Email"
@@ -42,9 +43,12 @@
             android:background="@drawable/password_field_default"
             android:drawableRight="@android:drawable/ic_lock_lock"
             android:hint="Enter pin"
-            android:padding="10dip" />
+            android:textSize="15sp"
+            android:padding="10dip"
+            android:inputType="textPassword" />
 
         <Button
+            android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dip"
@@ -56,11 +60,13 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/forgot_password_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:padding="10dip"
             android:text="@string/login_forgottext"
+			android:clickable="true"
             android:textColor="#6A7686"
             android:textColorHighlight="#FA6F57"
             android:textStyle="italic" />
