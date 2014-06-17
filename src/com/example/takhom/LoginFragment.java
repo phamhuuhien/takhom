@@ -14,9 +14,11 @@ import org.json.JSONObject;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,6 +28,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 
 public class LoginFragment extends SherlockFragment {
 
@@ -33,6 +36,7 @@ public class LoginFragment extends SherlockFragment {
 	private ProgressDialog progressDialog;
 	private EditText email, pin;
 	private TextView forgot_password_text;
+	private TextView register_account_text;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -43,6 +47,7 @@ public class LoginFragment extends SherlockFragment {
 		email.setText("tranvanthien113@gmail.com");
 		
 		forgot_password_text = (TextView)rootView.findViewById(R.id.forgot_password_text);
+		register_account_text = (TextView)rootView.findViewById(R.id.register_account_text);
 		pin = (EditText)rootView.findViewById(R.id.pin);
 
 		login_button.setOnClickListener(new OnClickListener() {
@@ -65,6 +70,17 @@ public class LoginFragment extends SherlockFragment {
 				forgotPassword();
 			}
 		});
+		
+		register_account_text.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				Intent it = new Intent(getActivity(), RegisterActivity.class );
+				startActivity(it);
+			}
+		});
+		
 		return rootView;
 	}
 

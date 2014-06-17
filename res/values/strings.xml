@@ -7,6 +7,7 @@
     
     <string name="login_bigtext">Free service, just enter a 4 digit code to get started.</string>
     <string name="login_forgottext">-> Forgot your Password/ Email?</string>
+    <string name="login_registertext">-> Register account?</string>
     <string name="login_paycheck">Paycheck management</string>
     <string name="login_paycheck_detail">Pay with your paycheck - before till after payday - to stretch it out and keep more of your money.</string>
     <string name="login_concept">Basic concept</string>
