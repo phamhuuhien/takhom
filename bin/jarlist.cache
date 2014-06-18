@@ -1,5 +1,5 @@
 # cache for current jar dependency. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1402441068351 621451 5896b0a4e377ac4242eb2bc785220c1c4fc052f4 C:\Users\hienpham\workspace\Takhom\libs\android-support-v4.jar
-1402474280068 271754 53307dc2bd2b69fd5533458ee11885f55807de4b C:\Users\hienpham\git\ActionBarSherlock\actionbarsherlock\libs\android-support-v4.jar
+1402560739000 271754 53307dc2bd2b69fd5533458ee11885f55807de4b /home/phuong/ActionBarSherlock/actionbarsherlock/libs/android-support-v4.jar
+1403008926000 621451 5896b0a4e377ac4242eb2bc785220c1c4fc052f4 /home/phuong/takhom/libs/android-support-v4.jar

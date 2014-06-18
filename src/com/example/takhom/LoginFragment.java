@@ -134,7 +134,7 @@ public class LoginFragment extends SherlockFragment {
 							alertDialog.setMessage(message);
 
 							// Setting Icon to Dialog
-							alertDialog.setIcon(R.drawable.ic_launcher);
+//							alertDialog.setIcon(R.drawable.ic_launcher);
 							alertDialog.show();
 						} catch (Exception e) {
 

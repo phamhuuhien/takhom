@@ -10,5 +10,5 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:textColor="#FFFFFF"
-        android:text="Make the best out of your take home"/>
+        android:text="Make the most of your paycheck"/>
 </LinearLayout>

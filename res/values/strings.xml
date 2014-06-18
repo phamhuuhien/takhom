@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Takhom</string>
+    <string name="app_name">Takehome</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     
-    <string name="login_bigtext">Free service, just enter a 4 digit code to get started.</string>
+    <string name="login_bigtext">Please enter your 4 digit code to get started.</string>
     <string name="login_forgottext">-> Forgot your Password/ Email?</string>
     <string name="login_registertext">-> Register account?</string>
     <string name="login_paycheck">Paycheck management</string>
     <string name="login_paycheck_detail">Pay with your paycheck - before till after payday - to stretch it out and keep more of your money.</string>
     <string name="login_concept">Basic concept</string>
-    <string name="login_concept_detail">As we often have more expenses than our take home pay can cover, this app helps to:</string>
+    <string name="login_concept_detail">Takehome makes it easy to manage your paycheck. Using a simple formula, it keeps tab of the bottom line while you list the payments you intend to make. Start a free account today. Here is how you can benefit:</string>
 
 </resources>

@@ -82,7 +82,7 @@ public class RegisterActivity extends SherlockActivity {
 					if(code == 0) { // code =0 la success ne
 						System.out.println("You have successfully registered. Please check mail to complete.");
 					} else {
-						System.out.println("This mail is wrong or already register. Please try agian with another mail.");
+						System.out.println("Invalid email or password.");
 					}
 				}});
 
