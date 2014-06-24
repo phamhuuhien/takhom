@@ -28,6 +28,10 @@
             android:name="com.example.takhom.RegisterActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.example.takhom.scenario.ScenarioActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

@@ -10,5 +10,6 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:textColor="#FFFFFF"
-        android:text="Make the most of your paycheck"/>
+        android:textStyle="bold"
+        android:text="@string/header"/>
 </LinearLayout>

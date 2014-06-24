@@ -1,133 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
-    <LinearLayout
+    <include
+        android:id="@+id/id_subheader"
+        android:layout_alignParentTop="true"
+        layout="@layout/sub_header" />
+
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" >
-
-        <include
-            android:id="@+id/id_subheader"
-            layout="@layout/sub_header" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="15dip"
-            android:text="@string/login_bigtext"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dip"
-            android:layout_marginRight="20dip"
-            android:textSize="15sp"
-            android:background="@drawable/password_field_default"
-            android:drawableRight="@drawable/ic_mail"
-            android:hint="Email"
-            android:padding="10dip" />
-
-        <EditText
-            android:id="@+id/pin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dip"
-            android:layout_marginRight="20dip"
-            android:layout_marginTop="10dip"
-            android:background="@drawable/password_field_default"
-            android:drawableRight="@android:drawable/ic_lock_lock"
-            android:hint="Enter pin"
-            android:textSize="15sp"
-            android:padding="10dip"
-            android:inputType="textPassword" />
-
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dip"
-            android:layout_marginRight="20dip"
-            android:layout_marginTop="10dip"
-            android:background="@drawable/login_button"
-            android:text="Login"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/forgot_password_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="10dip"
-            android:text="@string/login_forgottext"
-			android:clickable="true"
-            android:textColor="#6A7686"
-            android:textColorHighlight="#FA6F57"
-            android:textStyle="italic" />
-        
-        <TextView
-            android:id="@+id/register_account_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="10dip"
-            android:text="@string/login_registertext"
-			android:clickable="true"
-            android:textColor="#6A7686"
-            android:textColorHighlight="#FA6F57"
-            android:textStyle="italic" />
-        
+        android:layout_below="@+id/id_subheader" >
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#B2B2B3"
-            android:orientation="vertical"
-            android:padding="20dip" >
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="@string/login_paycheck"
-                android:textSize="22sp" />
+                android:padding="15dip"
+                android:text="@string/login_bigtext"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-            <TextView
+            <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/password_field_default"
+                android:drawableRight="@drawable/ic_mail"
+                android:hint="Email"
+                android:padding="10dip"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/password_field_default"
+                android:drawableRight="@android:drawable/ic_lock_lock"
+                android:hint="Enter pin"
+                android:inputType="textPassword"
+                android:padding="10dip"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/login_button"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forgot_password_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
                 android:gravity="center_horizontal"
-                android:paddingTop="10dip"
-                android:text="@string/login_paycheck_detail"
-                android:textSize="12sp" />
+                android:padding="10dip"
+                android:text="@string/login_forgottext"
+                android:textColor="#6A7686"
+                android:textColorHighlight="#FA6F57"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/register_account_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dip"
+                android:text="@string/login_registertext"
+                android:textColor="#6A7686"
+                android:textColorHighlight="#FA6F57"
+                android:textStyle="italic" />
+
+            <include
+                android:id="@+id/info"
+                layout="@layout/info" />
         </LinearLayout>
+    </ScrollView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dip" >
+    <include
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer" >
+    </include>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/login_concept"
-                android:textSize="22sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:paddingTop="10dip"
-                android:text="@string/login_concept_detail"
-                android:textSize="12sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-</ScrollView>
+</RelativeLayout>

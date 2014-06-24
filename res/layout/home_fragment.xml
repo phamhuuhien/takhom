@@ -8,7 +8,15 @@
         android:id="@+id/id_subheader"
         layout="@layout/sub_header" />
 
+    <LinearLayout
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
     <FrameLayout
+        android:id="@+id/takehome_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#999999"
@@ -25,7 +33,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/take_home_number"
+            android:id="@+id/takehome_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -36,6 +44,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/paycheck_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#B3B3B3"
@@ -46,13 +55,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="MY TAKHOM"
+            android:text="PAYCHECK"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/take_home_number"
+            android:id="@+id/paycheck_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
