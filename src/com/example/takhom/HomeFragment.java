@@ -273,13 +273,13 @@ public class HomeFragment extends SherlockFragment {
 					if(code == 0) {
 						try {
 							JSONArray scenarios = new JSONArray(message);
+							//System.out.println("message="+message);
 							for(int i=0; i< scenarios.length(); i++) {
 								JSONObject scenario = new JSONObject(scenarios.getJSONObject(i).getString("fields"));
-								if(scenario.getString("mode").equals("P")) {
-									//System.out.println("message="+scenarios.getJSONObject(i));
+								if(scenario.getString("mode").equals("P") || scenario.getString("mode").equals("A")) {
 									takehome_number.setText(scenario.getString("paycheck_amount"));
 									paycheck_number.setText(scenario.getString("paycheck_amount"));
-									activeScenario = scenario;
+									activeScenario = scenarios.getJSONObject(i);
 								}
 							}
 						} catch (Exception e) {

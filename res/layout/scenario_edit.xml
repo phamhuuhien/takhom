@@ -18,6 +18,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/payday_countdown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -26,7 +27,7 @@
         android:textSize="18sp" />
 
     <TableLayout
-        android:id="@+id/tabla_cuerpo"
+        android:id="@+id/allowcation_table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dip" >

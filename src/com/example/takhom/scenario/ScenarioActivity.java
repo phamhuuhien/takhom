@@ -1,5 +1,7 @@
 package com.example.takhom.scenario;
 
+import org.json.JSONObject;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
@@ -15,11 +17,12 @@ public class ScenarioActivity extends SherlockFragmentActivity {
 		super.onCreate(savedInstanceState);
 
 		String jsonObject = getIntent().getStringExtra(HomeFragment.ACTIVE_SCENARIO);
+		System.out.println("jsonObject="+jsonObject);
 		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 		if(jsonObject == null) {
 			ft.replace(android.R.id.content, new NewScenario(), "New");
 		} else {
-			ft.replace(android.R.id.content, new EditScenario(), "Edit");
+			ft.replace(android.R.id.content, new EditScenario(jsonObject), "Edit");
 		}
 		ft.commit();
 
